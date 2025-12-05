@@ -5,8 +5,7 @@ const cors = require('cors');
 const allowedOrigins = [
   'http://localhost:3000',
   'https://api-tester-app-ochre.vercel.app',
-  'https://api-tester-igm9bpiqz-aakanshas-projects-f4b2c9ab.vercel.app' 
-  // ... Any other domains you added
+  'https://api-tester-lgm9bpiqz-aakanshas-projects-f4b2c9ab.vercel.app'
 ];
 
 module.exports = cors({
