@@ -10,7 +10,9 @@ const historyRoutes = require('./routes/history.routes');
 const collectionsRoutes = require('./routes/collections.routes');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+
+// ✅ IMPORTANT FIX: Let Render control the port
+const PORT = process.env.PORT;
 
 app.use(corsMiddleware);
 app.use(bodyParser.json());
@@ -21,5 +23,5 @@ app.use(historyRoutes);
 app.use(collectionsRoutes);
 
 app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running on port ${PORT}`);
 });
